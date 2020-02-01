@@ -1,22 +1,31 @@
-//Code starts for stage Compile
-		stage('Compile') {
+pipeline {
+    agent any
+    stages {
+
+
+
+
+//Code starts for stage Build
+		stage('Build') {
             steps {
-                sh 'mvn compile'
+                sh 'mvn install -DskipTests'
             }
         }
-		//Code Ends for stage Compile
+		//Code ends for stage Build
 		
-				
-		//Code starts for stage Unit Test
-        stage('Unit Test') {
+		
+		//Code starts for stage Tomcat Server Up }
+		
+		}
+		stage('Tomcat Server Up') {
             steps {
-                sh 'mvn test'
-            }	
-            post {
-                always {
-                    junit 'target/surefire-reports/*.xml'
-                }
+                sh '/tmp/apache-tomcat-9.0.20/bin/startup.sh'
             }
         }
-		//Code ends for stage Unit Test
+		//Code ends for stage Tomcat Server Up
 		
+		
+		
+		}
+		
+		}
