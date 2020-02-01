@@ -22,12 +22,6 @@ pipeline {
                 sh '/tmp/apache-tomcat-9.0.20/bin/startup.sh'
             }
         }
-		//Code ends for stage Tomcat Server Up
-		
-			
-		// *****ALL CODE TO BE ADDED ABOVE THIS COMMENT*****
-    }
-}
 		
 		
 		
