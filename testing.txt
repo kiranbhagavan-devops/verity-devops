@@ -1,8 +1,9 @@
-//Code starts for stage PMD
-		stage('PMD') {
+		//Code ends fora stage PMD//Code starts for stage Clean
+        stage('Clean') {
             steps {
-                sh 'mvn site'
+                sh 'mvn clean'
             }
         }
-		//Code ends fora stage PMD
+		//Code ends for stage Clean
+		
 		
