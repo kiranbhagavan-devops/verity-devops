@@ -4,6 +4,14 @@ pipeline {
 		
 		
 		// *****ALL CODE TO BE ADDED BELOW THIS COMMENT*****
+
+		//Code starts for stage Build
+		stage('Build') {
+            steps {
+                sh 'mvn install -DskipTests'
+            }
+        }
+		//Code ends for stage Build
 		
 	
 		
