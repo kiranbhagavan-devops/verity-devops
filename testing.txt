@@ -4,5 +4,5 @@
                 sh 'mvn site'
             }
         }
-		//Code ends for stage PMD
+		//Code ends fora stage PMD
 		
